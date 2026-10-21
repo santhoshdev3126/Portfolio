@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Santhosh L. — Data Science Student | Data Analyst | Frontend Developer. Turning data into insights and ideas into interactive digital experiences.">
+  <meta name="theme-color" content="#0a0a0b">
+  <title>Santhosh L .com </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-content">
+      <span class="loader-logo">SL.</span>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <span class="cursor-label">VIEW</span>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo" aria-label="Home">A web about me </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#hero" class="nav-link active" data-section="hero">HOME</a>
+      <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+      <a href="#skills" class="nav-link" data-section="skills">SKILLS</a>
+      <a href="#experience" class="nav-link" data-section="experience">EXPERIENCE</a>
+      <a href="#projects" class="nav-link" data-section="projects">PROJECTS</a>
+      <a href="#communication" class="nav-link" data-section="communication">COMMUNICATION</a>
+      <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+      <span class="theme-icon theme-icon-moon">◐</span>
+      <span class="theme-icon theme-icon-sun">○</span>
+    </button>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="hero" aria-label="Hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 class="hero-name">
+          <span class="hero-name-inner">SANTHOSH L</span>
+        </h1>
+        <p class="hero-sub">DATA SCIENCE × CREATIVE DEVELOPMENT</p>
+        <p class="hero-mission">I turn data into insights and ideas into interactive digital experiences.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary magnetic" data-magnetic>
+            <span>VIEW MY WORK</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary magnetic" data-magnetic>
+            <span>LET'S CONNECT</span>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="scroll-arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="about" aria-label="About">
+      <div class="section-inner">
+        <div class="about-header">
+  <div class="about-photo-wrap">
+    <img src="assets/img/logo.jpeg" alt="Santhosh L" class="about-photo" loading="lazy">
+  </div>
+  <div class="about-text">
+    <h2 class="section-heading">ABOUT ME</h2>
+    <p class="about-sub reveal-text">I am a Data Science student who enjoys combining analytical thinking with creative frontend development.</p>
+  </div>
+</div>
+
+        <div class="about-stats">
+          <div class="stat-block" data-count="8.1" data-suffix="">
+            <span class="stat-value">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-block" data-count="500" data-suffix="K+">
+            <span class="stat-value">0</span>
+            <span class="stat-label">DATA RECORDS ANALYZED</span>
+          </div>
+          <div class="stat-block" data-count="3" data-suffix="">
+            <span class="stat-value">0</span>
+            <span class="stat-label">INTERNSHIP</span>
+          </div>
+          <div class="stat-block" data-count="7" data-suffix="">
+            <span class="stat-value">0</span>
+            <span class="stat-label">CERTIFICATIONS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cinematic-scroll" aria-hidden="true">
+        <div class="cinematic-track">
+          <span class="cinematic-line">DATA IS NOT JUST NUMBERS.</span>
+          <span class="cinematic-line alt">IT TELLS STORIES.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="skills" aria-label="Skills">
+      <div class="section-inner">
+        <h2 class="section-heading">SKILLS</h2>
+        <div class="skills-clusters">
+          <div class="skill-cluster" data-category="programming">
+            <h3 class="cluster-label">PROGRAMMING</h3>
+            <div class="skill-items">
+              <button class="skill-item" data-desc="Python — Core language for data analysis, scripting, and automation.">
+                <span>Python</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="skill-cluster" data-category="frontend">
+            <h3 class="cluster-label">FRONTEND</h3>
+            <div class="skill-items">
+              <button class="skill-item" data-desc="HTML — Semantic structure and accessible markup.">
+                <span>HTML</span>
+              </button>
+              <button class="skill-item" data-desc="CSS — Modern layouts, animations, and design systems.">
+                <span>CSS</span>
+              </button>
+              <button class="skill-item" data-desc="JavaScript — Interactive experiences and DOM orchestration.">
+                <span>JavaScript</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="skill-cluster" data-category="data">
+            <h3 class="cluster-label">DATA</h3>
+            <div class="skill-items">
+              <button class="skill-item" data-desc="SQL — Querying, joining, and shaping relational data.">
+                <span>SQL</span>
+              </button>
+              <button class="skill-item" data-desc="Power BI — Interactive dashboards and business intelligence.">
+                <span>Power BI</span>
+              </button>
+              <button class="skill-item" data-desc="MS Excel — Analysis, modeling, and reporting.">
+                <span>MS Excel</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="skill-tooltip" aria-hidden="true"></div>
+        <div class="ambient-labels" aria-hidden="true">
+          <span>PYTHON</span>
+          <span>SQL</span>
+          <span>POWER BI</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JS</span>
+          <span>EXCEL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="experience" aria-label="Experience">
+      <div class="section-inner">
+        <h2 class="section-heading">EXPERIENCE</h2>
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Experience 1 -->
+          <article class="timeline-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jan 2026</span>
+              <h3 class="timeline-title">Introduction to Power BI</h3>
+              <p class="timeline-org">ETS Academy</p>
+              <p class="timeline-desc">Free Power BI course with certificate — learned to transform raw data into interactive dashboards using real datasets and practical projects.</p>
+              <div class="dashboard-viz" aria-hidden="true">
+                <div class="viz-line-chart">
+                  <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                    <polyline class="chart-line" points="0,50 30,40 60,45 90,25 120,30 150,15 180,20 200,10" fill="none" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="viz-donut">
+                  <svg viewBox="0 0 40 40">
+                    <circle class="donut-bg" cx="20" cy="20" r="15" fill="none" stroke-width="4"/>
+                    <circle class="donut-fill" cx="20" cy="20" r="15" fill="none" stroke-width="4" stroke-dasharray="70 94" stroke-dashoffset="0"/>
+                  </svg>
+                </div>
+                <div class="viz-map">
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 2 -->
+          <article class="timeline-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">May 2026</span>
+              <h3 class="timeline-title">Junior Data Analytics Intern</h3>
+              <p class="timeline-org">Kaashiv Infotech</p>
+              <p class="timeline-desc">Built the Global Job Market & Salary Intelligence Dashboard — analyzing 500,000+ records across 2022–2025 to surface salary trends, role demand, and geographic insights.</p>
+              <div class="dashboard-viz" aria-hidden="true">
+                <div class="viz-line-chart">
+                  <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                    <polyline class="chart-line" points="0,50 30,40 60,45 90,25 120,30 150,15 180,20 200,10" fill="none" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="viz-donut">
+                  <svg viewBox="0 0 40 40">
+                    <circle class="donut-bg" cx="20" cy="20" r="15" fill="none" stroke-width="4"/>
+                    <circle class="donut-fill" cx="20" cy="20" r="15" fill="none" stroke-width="4" stroke-dasharray="70 94" stroke-dashoffset="0"/>
+                  </svg>
+                </div>
+                <div class="viz-map">
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 3 -->
+          <article class="timeline-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Apr 2026 — May 2026</span>
+              <h3 class="timeline-title">Data Science & Analytics Intern</h3>
+              <p class="timeline-org">Future Interns</p>
+              <p class="timeline-desc">Analysed sales and customer data to identify trends and generate valuable business insights. Worked with telco customer data to uncover churn patterns and improve retention strategies.</p>
+              <div class="dashboard-viz" aria-hidden="true">
+                <div class="viz-line-chart">
+                  <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                    <polyline class="chart-line" points="0,50 30,40 60,45 90,25 120,30 150,15 180,20 200,10" fill="none" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="viz-donut">
+                  <svg viewBox="0 0 40 40">
+                    <circle class="donut-bg" cx="20" cy="20" r="15" fill="none" stroke-width="4"/>
+                    <circle class="donut-fill" cx="20" cy="20" r="15" fill="none" stroke-width="4" stroke-dasharray="70 94" stroke-dashoffset="0"/>
+                  </svg>
+                </div>
+                <div class="viz-map">
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                  <span class="map-dot"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="projects" aria-label="Selected Work">
+      <div class="section-inner">
+        <h2 class="section-heading">SELECTED WORK</h2>
+        <div class="projects-list">
+
+          <!-- Project 01 -->
+          <a href="#" class="project-card" data-project="1" target="_blank" rel="noopener noreferrer" aria-label="Open Stateless Child Ledger project">
+            <div class="project-bg" aria-hidden="true"></div>
+            <div class="project-content">
+              <span class="project-num">01</span>
+              <h3 class="project-title">Stateless Child Ledger</h3>
+              <p class="project-desc">Tamper-evident digital complaint infrastructure ensuring integrity and accountability.</p>
+              <div class="project-tags">
+                <span>SHA-256</span>
+                <span>24H COMPLIANCE</span>
+                <span>HASH-CHAINED LEDGER</span>
+                <span>PDF ESCALATION</span>
+              </div>
+              <span class="project-link">View Project →</span>
+            </div>
+            <div class="project-spotlight" aria-hidden="true"></div>
+          </a>
+
+          <!-- Project 02 -->
+          <a href="assets/Power BI/jobs.pbix" class="project-card" data-project="2" target="_blank" rel="noopener noreferrer" aria-label="Open Global Job Market & Salary Intelligence dashboard">
+            <div class="project-bg ambient-data" aria-hidden="true">
+              <div class="data-points"></div>
+              <div class="trend-lines"></div>
+            </div>
+            <div class="project-content">
+              <span class="project-num">02</span>
+              <h3 class="project-title">Global Job Market & Salary Intelligence</h3>
+              <p class="project-desc">Dashboard analyzing 500,000+ job records from 2022–2025 to reveal salary trends and market demand.</p>
+              <div class="project-tags">
+                <span>500,000+ RECORDS</span>
+                <span>2022–2025</span>
+                <span>POWER BI</span>
+              </div>
+              <span class="project-link">View Dashboard →</span>
+            </div>
+            <div class="project-spotlight" aria-hidden="true"></div>
+          </a>
+
+          <!-- Project 03 -->
+          <a href="https://anime-analyst.netlify.app" class="project-card" data-project="3" target="_blank" rel="noopener noreferrer" aria-label="Open Anime Analyst Web Dashboard">
+            <div class="project-bg ambient-data" aria-hidden="true">
+              <div class="data-points"></div>
+              <div class="trend-lines"></div>
+            </div>
+            <div class="project-content">
+              <span class="project-num">03</span>
+              <h3 class="project-title">Anime Analyst Web Dashboard</h3>
+              <p class="project-desc">Clean, powerful analytics. Search any anime to get full focused analysis.</p>
+              <div class="project-tags">
+                <span>18,060+ RECORDS</span>
+                <span>1907–2023</span>
+                <span>NETLIFY</span>
+              </div>
+              <span class="project-link">View Project →</span>
+            </div>
+            <div class="project-spotlight" aria-hidden="true"></div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS & EDUCATION ==================== -->
+    <section id="certs" class="certs-edu" aria-label="Certifications and Education">
+      <div class="section-inner">
+        <h2 class="section-heading">CERTIFICATIONS</h2>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>TATA FORAGE</span>
+            <span>FUTURE INTERNS</span>
+            <span>SKILLSOFT</span>
+            <span>DELOITTE</span>
+            <span>GOOGLE DATA ANALYTICS</span>
+            <span>TATA FORAGE</span>
+            <span>FUTURE INTERNS</span>
+            <span>SKILLSOFT</span>
+            <span>DELOITTE</span>
+            <span>GOOGLE DATA ANALYTICS</span>
+          </div>
+        </div>
+
+        <div class="certs-grid">
+          <a href="assets/certificates/AI-powered Visuals in Power BI.pdf" class="cert-card" target="_blank" rel="noopener noreferrer" data-magnetic>
+            <span class="cert-num">01</span>
+            <span class="cert-name">AI-powered Visuals in Power BI</span>
+            <span class="cert-action">View PDF →</span>
+          </a>
+          <a href="assets/certificates/Markets Quantitative Analysis.pdf" class="cert-card" target="_blank" rel="noopener noreferrer" data-magnetic>
+            <span class="cert-num">02</span>
+            <span class="cert-name">Markets Quantitative Analysis</span>
+            <span class="cert-action">View PDF →</span>
+          </a>
+          <a href="assets/certificates/Career CAtalyst.pdf" class="cert-card" target="_blank" rel="noopener noreferrer" data-magnetic>
+            <span class="cert-num">03</span>
+            <span class="cert-name">Career Catalyst</span>
+            <span class="cert-action">View PDF →</span>
+          </a>
+          <a href="assets/certificates/Data Visualisation.pdf" class="cert-card" target="_blank" rel="noopener noreferrer" data-magnetic>
+            <span class="cert-num">04</span>
+            <span class="cert-name">Data Visualisation</span>
+            <span class="cert-action">View PDF →</span>
+          </a>
+          <a href="assets/certificates/deloitte.pdf" class="cert-card" target="_blank" rel="noopener noreferrer" data-magnetic>
+            <span class="cert-num">05</span>
+            <span class="cert-name">Deloitte</span>
+            <span class="cert-action">View PDF →</span>
+          </a>
+          <a href="assets/certificates/Future Intern.pdf" class="cert-card" target="_blank" rel="noopener noreferrer" data-magnetic>
+            <span class="cert-num">06</span>
+            <span class="cert-name">Future Intern</span>
+            <span class="cert-action">View PDF →</span>
+          </a>
+          <a href="assets/certificates/tata intern certificate.pdf" class="cert-card" target="_blank" rel="noopener noreferrer" data-magnetic>
+            <span class="cert-num">07</span>
+            <span class="cert-name">TATA Forage</span>
+            <span class="cert-action">View PDF →</span>
+          </a>
+        </div>
+
+        <h2 class="section-heading edu-heading">EDUCATION</h2>
+        <ul class="edu-list">
+          <li class="edu-item">
+            <span class="edu-year">2026 — Present</span>
+            <span class="edu-detail">B.Sc. Data Science · K.S. Rangasamy College of Arts and Science · CGPA 8.1/10</span>
+          </li>
+          <li class="edu-item">
+            <span class="edu-year">2024</span>
+            <span class="edu-detail">Kongu Vellalar Matric Hr. Sec. School</span>
+          </li>
+          <li class="edu-item">
+            <span class="edu-year">2022</span>
+            <span class="edu-detail">Government High School</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================== COMMUNICATION ==================== -->
+<section id="communication" class="communication" aria-label="Communication">
+  <div class="section-inner">
+    <h2 class="section-heading">COMMUNICATION</h2>
+    <p class="comm-intro">Click a card to open a short video about my interests.</p>
+
+    <div class="comm-cards">
+      <!-- Interest 1 -->
+      <button class="comm-card" data-video="1" aria-label="Open video 1">
+        <span class="comm-card-num">01</span>
+        <h3 class="comm-card-title">Interest One</h3>
+        <p class="comm-card-desc">Short teaser about this interest.</p>
+        <span class="comm-card-cta">Watch →</span>
+      </button>
+
+      <!-- Interest 2 -->
+      <button class="comm-card" data-video="2" aria-label="Open video 2">
+        <span class="comm-card-num">02</span>
+        <h3 class="comm-card-title">Interest Two</h3>
+        <p class="comm-card-desc">Short teaser about this interest.</p>
+        <span class="comm-card-cta">Watch →</span>
+      </button>
+
+      <!-- Interest 3 -->
+      <button class="comm-card" data-video="3" aria-label="Open video 3">
+        <span class="comm-card-num">03</span>
+        <h3 class="comm-card-title">Interest Three</h3>
+        <p class="comm-card-desc">Short teaser about this interest.</p>
+        <span class="comm-card-cta">Watch →</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== VIDEO OVERLAY (Bubble) ========== -->
+<div class="video-overlay" id="video-overlay" aria-hidden="true">
+  <div class="video-bubble">
+    <button class="video-close" id="video-close" aria-label="Close video">×</button>
+
+    <div class="video-content" data-video-panel="1">
+      <video controls playsinline preload="metadata">
+        <source src="assets/videos/portfolio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3 class="video-title">English</h3>
+      <p class="video-desc">Write a short description about this video / interest here.</p>
+    </div>
+
+    <div class="video-content" data-video-panel="2" hidden>
+      <video controls playsinline preload="metadata">
+        <source src="assets/videos/interest-2.mp4" type="video/mp4">
+      </video>
+      <h3 class="video-title">Interest Two</h3>
+      <p class="video-desc">Write a short description about this video / interest here.</p>
+    </div>
+
+    <div class="video-content" data-video-panel="3" hidden>
+      <video controls playsinline preload="metadata">
+        <source src="assets/videos/interest-3.mp4" type="video/mp4">
+      </video>
+      <h3 class="video-title">Interest Three</h3>
+      <p class="video-desc">Write a short description about this video / interest here.</p>
+    </div>
+  </div>
+</div>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="contact" aria-label="Contact">
+      <div class="section-inner">
+        <h2 class="contact-heading">LET'S BUILD SOMETHING.<br>MEANINGFUL.</h2>
+        <div class="contact-links">
+
+  <!-- Gmail -->
+  <a href="mailto:santhoshlohanathan3126@gmail.com" class="social-icon magnetic" data-magnetic aria-label="Email">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="M22 6L12 13L2 6"/>
+    </svg>
+    <span>Gmail</span>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/santhosh3126" target="_blank" rel="noopener noreferrer" class="social-icon magnetic" data-magnetic aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/>
+    </svg>
+    <span>LinkedIn</span>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/santhoshdev3126" target="_blank" rel="noopener noreferrer" class="social-icon magnetic" data-magnetic aria-label="GitHub">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.09.682-.22.682-.48 0-.24-.009-.87-.014-1.71-2.782.6-3.369-1.34-3.369-1.34-.454-1.16-1.11-1.47-1.11-1.47-.908-.62.069-.6.069-.6 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.555-1.11-4.555-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.7.11 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.523-4.477-10-10-10z"/>
+    </svg>
+    <span>GitHub</span>
+  </a>
+
+  <!-- Netlify (your Anime Analyst site) -->
+  
+
+</div>
+        <a href="mailto:santhoshlohanathan3126@gmail.com" class="btn btn-cta magnetic" data-magnetic>
+          <span>START A CONVERSATION</span>
+          <span class="cta-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" aria-label="Footer">
+      <div class="footer-zoom">
+        <p class="footer-thanks">THANKS FOR SCROLLING.</p>
+        <p class="footer-brand">SANTHOSH L. | DATA × CODE × IMPACT</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
